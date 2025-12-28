@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Karthika V.S | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --primary: #0f766e;
+            /* Professional Teal */
+            --secondary: #134e4a;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1f2937;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        /* NAVBAR */
+        nav {
+            position: sticky;
+            top: 0;
+            background: var(--card);
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 15px 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: var(--text);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        /* HERO */
+        header {
+            background: linear-gradient(120deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 90px 20px;
+            text-align: center;
+        }
+
+        /* PROFILE IMAGE */
+        .profile-img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 22px;
+        }
+
+        /* NAME */
+        header h2 {
+            font-size: 52px;
+            /* LARGE PROFESSIONAL NAME */
+            margin: 10px 0;
+            letter-spacing: 1.5px;
+        }
+
+        /* TITLE */
+        header p {
+            font-size: 20px;
+            opacity: 0.95;
+        }
+
+        /* SECTIONS */
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            font-size: 26px;
+            margin-bottom: 25px;
+            color: var(--primary);
+        }
+
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* CARD */
+        .card {
+            background: var(--card);
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        /* SKILLS */
+        .skill {
+            display: inline-block;
+            background: #ccfbf1;
+            color: var(--secondary);
+            padding: 8px 16px;
+            margin: 6px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0f172a;
+            color: #cbd5f5;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+        <img src="photo.jpg" alt="Karthika V.S" class="profile-img">
+        <h2>KARTHIKA V.S</h2>
+        <p> Bachelor of Information Technology | Fresher</p>
+    </header>
+
+    <section id="about">
+        <h3 class="section-title">About Me</h3>
+        <div class="card">
+            <p>
+                Diploma graduate in Computer Engineering with hands-on exposure
+                to frontend development, programming fundamentals, and basic
+                machine learning concepts. Seeking an entry-level role to grow
+                professionally and contribute effectively to organizational goals.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">Education</h3>
+        <div class="grid">
+
+            <div class="card">
+                <strong>Bachelor of Information Technology</strong>
+
+                <p>Bannari Amman Institute of Technology,Sathyamangalam</p>
+            </div>
+            <div class="card">
+                <strong>Diploma in Computer Engineering</strong>
+                <p>Government Polytechnic College for Women, Coimbatore</p>
+                <p><b>75%</b></p>
+            </div>
+            <div class="card">
+                <strong>SSLC (2022)</strong>
+                <p>S.B.O.A Matric Higher Secondary School,Coimbatore</p>
+                <p><b>52%</b></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h3 class="section-title">Technical Skills</h3>
+        <div class="card">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">C</span>
+            <span class="skill">Python</span>
+            <span class="skill">Java</span>
+            <span class="skill">C#</span>
+            <span class="skill">Full Stack Basics</span>
+            <span class="skill">MS Excel</span>
+            <span class="skill">PowerPoint</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h3 class="section-title">Projects</h3>
+        <div class="grid">
+            <div class="card">
+                <strong>Smart Tourism Recommender System</strong>
+                <p>Recommendation system designed to assist tourists in destination selection.</p>
+            </div>
+            <div class="card">
+                <strong>Basic Web Application</strong>
+                <p>Responsive web pages created using HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h3 class="section-title">Contact</h3>
+        <div class="card">
+            <p>📞 6380330431</p>
+            <p>📧 karthikavs30@gmail.com</p>
+            <p>📍 Coimbatore, Tamil Nadu</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Karthika V.S • Student Portfolio
+    </footer>
+
+</body>
+
+</html>
